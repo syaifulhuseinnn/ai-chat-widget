@@ -3,6 +3,7 @@
 	"private": false,
 	"version": "1.0.0",
 	"type": "module",
+	"description": "A lightweight AI chat widget with markdown support",
 	"files": [
 		"dist"
 	],
@@ -12,16 +13,34 @@
 		".": {
 			"import": "./dist/ai-chat-widget.js",
 			"require": "./dist/ai-chat-widget.umd.cjs"
-		}
+		},
+		"./style.css": "./dist/style.css"
 	},
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"keywords": [
+		"chat",
+		"widget",
+		"ai",
+		"markdown",
+		"tailwindcss"
+	],
+	"author": "Syaiful Husein",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/syaifulhuseinnn/ai-chat-widget.git"
+	},
+	"bugs": {
+		"url": "https://github.com/syaifulhuseinnn/ai-chat-widget/issues"
+	},
+	"homepage": "https://github.com/syaifulhuseinnn/ai-chat-widget#readme",
+	"publishConfig": {
+		"access": "public"
+	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.4.49",
