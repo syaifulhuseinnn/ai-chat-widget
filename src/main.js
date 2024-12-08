@@ -176,3 +176,9 @@ export class AIChatWidget {
     }
   }
 }
+
+if (typeof window !== "undefined") {
+  window.AIChatWidget = AIChatWidget;
+}
+
+export default AIChatWidget;
