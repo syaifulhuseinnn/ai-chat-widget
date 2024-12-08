@@ -5,37 +5,18 @@
 
 @layer components {
   .chat-button {
-    @apply aic-bg-primary-600 aic-text-white aic-rounded-lg aic-px-4 aic-py-2 aic-font-medium 
-           hover:aic-bg-primary-700 aic-transition-colors;
+    @apply bg-primary-600 text-white rounded-lg px-4 py-2 font-medium 
+           hover:bg-primary-700 transition-colors;
   }
 
   .chat-input {
-    @apply aic-w-full aic-px-4 aic-py-3 aic-border aic-border-gray-200 aic-rounded-lg aic-resize-none 
-           focus:aic-outline-none focus:aic-ring-2 focus:aic-ring-primary-500 focus:aic-border-transparent
-           placeholder:aic-text-gray-400 aic-min-h-[50px] aic-max-h-[120px];
+    @apply w-full px-4 py-3 border border-secondary-200 rounded-lg resize-none 
+           focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent
+           placeholder:text-secondary-400 min-h-[50px] max-h-[120px];
   }
 
   .markdown-content {
-    @apply aic-prose aic-prose-sm aic-max-w-none;
-  }
-
-  .markdown-content ul {
-    @apply aic-list-disc aic-ml-6 aic-mt-2 aic-mb-2;
-  }
-
-  .markdown-content li {
-    @apply aic-mb-1;
-  }
-
-  .markdown-content strong {
-    @apply aic-font-semibold;
-  }
-
-  .markdown-content p {
-    @apply aic-mb-2;
-  }
-
-  .markdown-content p:last-child {
-    @apply aic-mb-0;
+    @apply prose prose-sm max-w-none prose-headings:text-secondary-900 
+           prose-p:text-secondary-700 prose-strong:text-secondary-900;
   }
 }
