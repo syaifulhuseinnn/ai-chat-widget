@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>AI Chat Widget Demo</title>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+	<div class="max-w-2xl mx-auto py-12 px-4">
+		<h1 class="text-3xl font-bold text-gray-900 mb-8">AI Chat Widget Demo</h1>
+		<p class="text-gray-600 mb-4">Click the chat button in the bottom right corner to test the widget.</p>
+	</div>
+
+	<script type="module">
+		import { AIChatWidget } from './src/main.js'
+
+		const chat = new AIChatWidget({
+			userId: '5f4f181f-bce0-4aad-8be4-6f183848b582',
+			placeholder: 'Bantu saya carikan produk untuk wadah makanan harga dibawah Rp 50.000'
+			
+		});
+	</script>
+</body>
+
+</html>
