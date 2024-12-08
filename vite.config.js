@@ -6,7 +6,13 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/main.js"),
       name: "AIChatWidget",
-      fileName: "ai-chat-widget",
+      fileName: (format) => {
+        // Change the file extension to .js for UMD build
+        if (format === "umd") {
+          return "ai-chat-widget.umd.js";
+        }
+        return `ai-chat-widget.${format}.js`;
+      },
     },
     rollupOptions: {
       output: {
