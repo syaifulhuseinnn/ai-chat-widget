@@ -5,19 +5,22 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/main.js"),
-      name: "AIChatWidget", // This needs to match the global variable name
+      name: "AIChatWidget",
       formats: ["umd", "es"],
       fileName: (format) => `ai-chat-widget.${format}.js`,
     },
     rollupOptions: {
       output: {
-        // Ensure the UMD build creates a global variable
         globals: {
-          marked: "marked", // External dependency
+          marked: "marked",
         },
-        extend: true, // Extend the global variable
+        extend: true,
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === "style.css") return "ai-chat-widget.css";
+          return assetInfo.name;
+        },
       },
-      external: ["marked"], // Mark marked as external
+      external: ["marked"],
     },
   },
 });

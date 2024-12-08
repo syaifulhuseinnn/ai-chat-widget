@@ -41,6 +41,7 @@
 		"access": "public"
 	},
 	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.15",
 		"autoprefixer": "^10.4.20",
 		"postcss": "^8.4.49",
 		"tailwindcss": "^3.4.16",
